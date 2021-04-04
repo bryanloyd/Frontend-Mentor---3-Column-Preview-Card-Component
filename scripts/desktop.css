@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+  margin-top: 25px;
   width: 920px;
   height: 500px;
   display: grid;
@@ -30,5 +31,5 @@ body {
 }
 
 button {
-  margin-top: 50px;
+  margin-top: 75px;
 }

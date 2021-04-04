@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-text-white);
+  background-color: var(--color-lt-gray);
 }
 
 h1 {
