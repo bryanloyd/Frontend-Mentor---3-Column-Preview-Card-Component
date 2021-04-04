@@ -1,44 +1,111 @@
 :root {
-    --color-orange: #e28625;
-    --color-dk-cyan: #006971;
-    --color-vd-cyan: #004140;
-    --color-text-white: #ffffff;
-    --color-lt-gray: #f2f2f2;
+  --color-orange: #e28625;
+  --color-dk-cyan: #006971;
+  --color-vd-cyan: #004140;
+  --color-text-white: #ffffff;
+  --color-lt-gray: #f2f2f2;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--color-lt-gray);
+  font-size: 4rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-text-white);
+  opacity: 70%;
+  line-height: 1.5;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  border: 0;
+  background-color: var(--color-lt-gray);
+  border: 2px solid var(--color-lt-gray);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.card1 button {
+  color: var(--color-orange);
+}
+
+.card2 button {
+  color: var(--color-dk-cyan);
+}
+
+.card3 button {
+  color: var(--color-vd-cyan);
+}
+
+.card1 button:active,
+.card1 button:hover {
+  color: var(--color-text-white);
+  border: 2px solid var(--color-text-white);
+  background-color: var(--color-orange);
+  cursor: pointer;
+}
+
+.card2 button:active,
+.card2 button:hover {
+  color: var(--color-text-white);
+  border: 2px solid var(--color-text-white);
+  background-color: var(--color-dk-cyan);
+  cursor: pointer;
+}
+
+.card3 button:active,
+.card3 button:hover {
+  color: var(--color-text-white);
+  border: 2px solid var(--color-text-white);
+  background-color: var(--color-vd-cyan);
+  cursor: pointer;
+}
+
+.card1 button:focus,
+.card2 button:focus,
+.card3 button:focus {
+  outline: none;
 }
 
 .container {
-    width: 327px;
+  margin: 80px 0;
+  width: 327px;
+  height: max-content;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.card1,
+.card2,
+.card3 {
+  padding: 50px;
 }
 
 .card1 {
-background-color: var(--color-orange);
-width: 327px;
-height: 442px;
+  background-color: var(--color-orange);
 }
 
 .card2 {
-background-color: var(--color-dk-cyan);
-width: 327px;
-height: 442px;
+  background-color: var(--color-dk-cyan);
 }
 
 .card3 {
-background-color: var(--color-vd-cyan);
-width: 327px;
-height: 442px
+  background-color: var(--color-vd-cyan);
 }
